@@ -16,7 +16,7 @@ const empMonika = new Employee(77, "Monika", "IT", 40000, "Wipro");
 const empVinayak = new Employee(88, "Vinayak", "IT", 75000, "TCS");
 const empMahesh = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 
-const arrayEmployees=[empAnil, empRadha, empRishi, empSonali, empMonika, empVinayak, empMahesh]
+const arrayEmployees=[empAnil, empRadha, empRishi, empSonali, empMonika, empVinayak, empMahesh];
 
 console.log(`========== 1.Find all the employees working in TCS and log only Employee names and company name ==========`);
 
