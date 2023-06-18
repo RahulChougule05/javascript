@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Assignment</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        li, a{
+            font-size: larger;
+        }
+        
+        .Technology {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="Profile">My Profile Details</h1>
+
+    <h2 class="Technology">Technology Stack</h2>
+    <ul class="list">
+        <li>HTML and CSS</li>
+        <li id="tools">Agile and JIRA</li>
+        <li>Angular or React</li>
+        <li>Oracle</li>
+    </ul>
+
+    <h2>My Hobbies</h2>
+
+    <a href="https://www.google.com/" target="_blank" class="link">My_Profile</a>
+
+    <h3>Project Description</h3>
+
+    <script>
+        const elementProfile = document.querySelector(".Profile");
+        elementProfile.style.color = "aqua";
+
+        const elementList = document.querySelector(".list");
+        const elementTools = document.querySelector("#tools");
+        elementList.removeChild(elementTools);
+
+        const elementLink = document.querySelector(".link")
+        elementLink.setAttribute("href", "https://www.facebook.com/login/");
+    </script>
+</body>
+</html>
